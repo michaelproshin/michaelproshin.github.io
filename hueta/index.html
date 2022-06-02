@@ -98,9 +98,13 @@
   <br>
   <br>
   <a class="animated-text" href="#top">take the prise</a>
-  <audio autoplay>
-    <source src="./sounds/welcome.mp3" type="audio/mpeg">
-  </audio>
+  <!-- <audio src="./sounds/welcome.mp3" autoplay> -->
+  <script>
+    document.body.addEventListener('click', () => {
+      new Audio('./sounds/welcome.mp3').play()
+    })
+  </script>
+
 </body>
 
 </html>
